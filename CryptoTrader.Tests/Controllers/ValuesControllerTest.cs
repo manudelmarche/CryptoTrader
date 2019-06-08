@@ -11,16 +11,16 @@ using CryptoTrader.Controllers;
 namespace CryptoTrader.Tests.Controllers
 {
     [TestClass]
-    public class ValuesControllerTest
+    public class AccountControllerTest
     {
         [TestMethod]
         public void Get()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            AccountController controller = new AccountController();
 
             // Act
-            IEnumerable<string> result = controller.Get();
+             string result = controller.Get();
 
             // Assert
             Assert.IsNotNull(result);
@@ -33,7 +33,7 @@ namespace CryptoTrader.Tests.Controllers
         public void GetById()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            AccountController controller = new AccountController();
 
             // Act
             string result = controller.Get(5);
@@ -46,7 +46,7 @@ namespace CryptoTrader.Tests.Controllers
         public void Post()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            AccountController controller = new AccountController();
 
             // Act
             controller.Post("value");
@@ -58,7 +58,7 @@ namespace CryptoTrader.Tests.Controllers
         public void Put()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            AccountController controller = new AccountController();
 
             // Act
             controller.Put(5, "value");
@@ -70,7 +70,7 @@ namespace CryptoTrader.Tests.Controllers
         public void Delete()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            AccountController controller = new AccountController();
 
             // Act
             controller.Delete(5);
